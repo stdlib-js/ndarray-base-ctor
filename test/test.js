@@ -3870,7 +3870,7 @@ tape( 'an ndarray has a protocol method for serializing meta data to a DataView 
 	var arr;
 
 	ndarray = proxyquire( './../lib/main.js', {
-		'@stdlib/assert/has-bigint-support': hasSupport
+		'@stdlib/assert-has-bigint-support': hasSupport
 	});
 
 	dtype = 'float64';
@@ -3989,7 +3989,7 @@ tape( 'an ndarray has a protocol method for serializing meta data to a DataView 
 	var dv2;
 
 	ndarray = proxyquire( './../lib/main.js', {
-		'@stdlib/assert/has-bigint-support': hasSupport
+		'@stdlib/assert-has-bigint-support': hasSupport
 	});
 
 	dtype = 'float64';
