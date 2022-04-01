@@ -1,0 +1,40 @@
+{
+  "name": "@stdlib/ndarray-base-ctor",
+  "version": "0.0.0",
+  "description": "Base multidimensional array.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./mod.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/ndarray-base-ctor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdtypes",
+    "types",
+    "data",
+    "structure",
+    "array",
+    "typed",
+    "typed array",
+    "typed-array",
+    "multidimensional",
+    "dimensions",
+    "dims",
+    "ndarray",
+    "constructors",
+    "constructor",
+    "ctors",
+    "ctor",
+    "base"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
