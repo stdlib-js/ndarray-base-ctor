@@ -43,6 +43,7 @@
     "@stdlib/assert-has-bigint-support": "^0.0.x",
     "@stdlib/assert-is-little-endian": "^0.0.x",
     "@stdlib/bigint-ctor": "^0.0.x",
+    "@stdlib/boolean-ctor": "^0.0.x",
     "@stdlib/complex-imag": "^0.0.x",
     "@stdlib/complex-real": "^0.0.x",
     "@stdlib/ndarray-base-bytes-per-element": "^0.0.x",
