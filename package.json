@@ -3,31 +3,8 @@
   "version": "0.0.6",
   "description": "Base multidimensional array.",
   "license": "Apache-2.0",
-  "author": {
-    "name": "The Stdlib Authors",
-    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
-  },
-  "contributors": [
-    {
-      "name": "The Stdlib Authors",
-      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
-    }
-  ],
-  "main": "./lib",
-  "directories": {
-    "benchmark": "./benchmark",
-    "doc": "./docs",
-    "example": "./examples",
-    "lib": "./lib",
-    "test": "./test"
-  },
-  "types": "./docs/types",
-  "scripts": {
-    "test": "make test",
-    "test-cov": "make test-cov",
-    "examples": "make examples",
-    "benchmark": "make benchmark"
-  },
+  "type": "module",
+  "main": "./index.mjs",
   "homepage": "https://stdlib.io",
   "repository": {
     "type": "git",
@@ -36,68 +13,6 @@
   "bugs": {
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
-  "dependencies": {
-    "@stdlib/array-buffer": "^0.0.6",
-    "@stdlib/array-dataview": "^0.0.6",
-    "@stdlib/array-uint8": "^0.0.7",
-    "@stdlib/assert-has-bigint-support": "^0.0.8",
-    "@stdlib/assert-is-little-endian": "^0.0.7",
-    "@stdlib/bigint-ctor": "^0.0.7",
-    "@stdlib/boolean-ctor": "^0.0.1",
-    "@stdlib/complex-imag": "^0.0.7",
-    "@stdlib/complex-real": "^0.0.7",
-    "@stdlib/ndarray-base-bytes-per-element": "^0.0.8",
-    "@stdlib/ndarray-base-iteration-order": "^0.0.8",
-    "@stdlib/ndarray-base-minmax-view-buffer-index": "^0.0.8",
-    "@stdlib/ndarray-base-strides2order": "^0.0.6",
-    "@stdlib/ndarray-dtypes": "^0.0.9",
-    "@stdlib/ndarray-index-modes": "^0.0.8",
-    "@stdlib/ndarray-orders": "^0.0.8",
-    "@stdlib/number-float64-base-to-int64-bytes": "^0.0.6",
-    "@stdlib/string-replace": "^0.0.11",
-    "@stdlib/types": "^0.0.14",
-    "@stdlib/utils-define-nonenumerable-read-only-accessor": "^0.0.7",
-    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.0.7",
-    "@stdlib/error-tools-fmtprodmsg": "^0.0.2"
-  },
-  "devDependencies": {
-    "@stdlib/array-complex128": "^0.0.6",
-    "@stdlib/array-complex64": "^0.0.6",
-    "@stdlib/array-float32": "^0.0.6",
-    "@stdlib/array-float64": "^0.0.6",
-    "@stdlib/assert-has-own-property": "^0.0.7",
-    "@stdlib/assert-has-property": "^0.0.7",
-    "@stdlib/assert-instance-of": "^0.0.8",
-    "@stdlib/assert-is-dataview": "^0.0.7",
-    "@stdlib/assert-is-function": "^0.0.8",
-    "@stdlib/assert-is-nonnegative-integer": "^0.0.7",
-    "@stdlib/assert-is-plain-object": "^0.0.7",
-    "@stdlib/assert-is-positive-integer": "^0.0.7",
-    "@stdlib/bench": "^0.0.12",
-    "@stdlib/complex-float32": "^0.0.7",
-    "@stdlib/complex-float64": "^0.0.8",
-    "@stdlib/math-base-special-floor": "^0.0.8",
-    "@stdlib/random-base-randu": "^0.0.8",
-    "proxyquire": "^2.0.0",
-    "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
-    "istanbul": "^0.4.1",
-    "tap-min": "git+https://github.com/Planeshifter/tap-min.git"
-  },
-  "engines": {
-    "node": ">=0.10.0",
-    "npm": ">2.7.0"
-  },
-  "os": [
-    "aix",
-    "darwin",
-    "freebsd",
-    "linux",
-    "macos",
-    "openbsd",
-    "sunos",
-    "win32",
-    "windows"
-  ],
   "keywords": [
     "stdlib",
     "stdtypes",
@@ -118,7 +33,6 @@
     "ctor",
     "base"
   ],
-  "__stdlib__": {},
   "funding": {
     "type": "opencollective",
     "url": "https://opencollective.com/stdlib"
