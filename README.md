@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-ctor@esm/index.mjs';
+import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-ctor@v0.1.0-esm/index.mjs';
 ```
 
 <a name="main"></a>
@@ -608,7 +608,7 @@ The method does **not** serialize data outside of the buffer region defined by t
 <script type="module">
 
 import Float32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@esm/index.mjs';
-import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-ctor@esm/index.mjs';
+import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-ctor@v0.1.0-esm/index.mjs';
 
 // Create a data buffer:
 var buffer = new Float32Array( (3*3*3*3) + 100 );
