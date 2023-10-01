@@ -60,8 +60,8 @@
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.1.0"
   },
   "devDependencies": {
-    "@stdlib/array-complex128": "^0.0.6",
-    "@stdlib/array-complex64": "^0.0.6",
+    "@stdlib/array-complex128": "^0.1.0",
+    "@stdlib/array-complex64": "^0.1.0",
     "@stdlib/array-float32": "^0.1.0",
     "@stdlib/array-float64": "^0.1.0",
     "@stdlib/assert-has-own-property": "^0.1.0",
@@ -76,7 +76,7 @@
     "@stdlib/complex-float32": "^0.1.0",
     "@stdlib/complex-float64": "^0.1.0",
     "@stdlib/math-base-special-floor": "^0.1.0",
-    "@stdlib/random-base-randu": "^0.0.8",
+    "@stdlib/random-base-randu": "^0.1.0",
     "proxyquire": "^2.0.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
