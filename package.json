@@ -57,7 +57,8 @@
     "@stdlib/string-replace": "^0.1.1",
     "@stdlib/types": "^0.1.0",
     "@stdlib/utils-define-nonenumerable-read-only-accessor": "^0.1.1",
-    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.1.1"
+    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.1.1",
+    "@stdlib/error-tools-fmtprodmsg": "^0.1.1"
   },
   "devDependencies": {
     "@stdlib/array-complex128": "^0.1.0",
