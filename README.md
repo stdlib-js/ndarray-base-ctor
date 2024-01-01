@@ -45,14 +45,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray-base-ctor
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-ctor@deno/mod.js';
+var ndarray = require( '@stdlib/ndarray-base-ctor' );
 ```
 
 <a name="main"></a>
@@ -119,7 +135,7 @@ var str = ndarray.name;
 Size (in bytes) of the array (if known).
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
+var Float64Array = require( '@stdlib/array-float64' );
 
 // Specify the array configuration:
 var buffer = new Float64Array( [ 1, 2, 3, 4 ] );
@@ -161,7 +177,7 @@ var nbytes = arr.byteLength;
 Size (in bytes) of each array element (if known).
 
 ```javascript
-import Float32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@deno/mod.js';
+var Float32Array = require( '@stdlib/array-float32' );
 
 // Specify the array configuration:
 var buffer = new Float32Array( [ 1, 2, 3, 4 ] );
@@ -203,7 +219,7 @@ var nbytes = arr.BYTES_PER_ELEMENT;
 A reference to the underlying data buffer.
 
 ```javascript
-import Int8Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int8@deno/mod.js';
+var Int8Array = require( '@stdlib/array-int8' );
 
 // Specify the array configuration:
 var buffer = new Int8Array( [ 1, 2, 3, 4 ] );
@@ -230,7 +246,7 @@ var bool = ( d === buffer );
 Underlying [data type][@stdlib/ndarray/dtypes].
 
 ```javascript
-import Uint8Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8@deno/mod.js';
+var Uint8Array = require( '@stdlib/array-uint8' );
 
 // Specify the array configuration:
 var buffer = new Uint8Array( [ 1, 2, 3, 4 ] );
@@ -260,7 +276,7 @@ Meta information, such as information concerning the memory layout of the array.
 An array is contiguous if (1) an array is compatible with being stored in a single memory segment and (2) each array element is adjacent to the next array element. Note that an array can be both row-major contiguous and column-major contiguous at the same time (e.g., if an array is a 1-dimensional ndarray with `strides = [1]`).
 
 ```javascript
-import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
+var Int32Array = require( '@stdlib/array-int32' );
 
 // Specify the array configuration:
 var buffer = new Int32Array( [ 1, 2, 3, 4 ] );
@@ -284,7 +300,7 @@ var flg = arr.flags;
 Number of array elements.
 
 ```javascript
-import Uint16Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint16@deno/mod.js';
+var Uint16Array = require( '@stdlib/array-uint16' );
 
 // Specify the array configuration:
 var buffer = new Uint16Array( [ 1, 2, 3, 4 ] );
@@ -308,7 +324,7 @@ var len = arr.length;
 Number of dimensions.
 
 ```javascript
-import Uint8ClampedArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8c@deno/mod.js';
+var Uint8ClampedArray = require( '@stdlib/array-uint8c' );
 
 // Specify the array configuration:
 var buffer = new Uint8ClampedArray( [ 1, 2, 3, 4 ] );
@@ -332,7 +348,7 @@ var ndims = arr.ndims;
 Index offset which specifies the `buffer` index at which to start iterating over array elements.
 
 ```javascript
-import Int16Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int16@deno/mod.js';
+var Int16Array = require( '@stdlib/array-int16' );
 
 // Specify the array configuration:
 var buffer = new Int16Array( [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ] );
@@ -356,7 +372,7 @@ var o = arr.offset;
 Array order. The array order is either row-major (C-style) or column-major (Fortran-style).
 
 ```javascript
-import Uint32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint32@deno/mod.js';
+var Uint32Array = require( '@stdlib/array-uint32' );
 
 // Specify the array configuration:
 var buffer = new Uint32Array( [ 1, 2, 3, 4 ] );
@@ -602,8 +618,8 @@ The method does **not** serialize data outside of the buffer region defined by t
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import Float32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@deno/mod.js';
-import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-ctor@deno/mod.js';
+var Float32Array = require( '@stdlib/array-float32' );
+var ndarray = require( '@stdlib/ndarray-base-ctor' );
 
 // Create a data buffer:
 var buffer = new Float32Array( (3*3*3*3) + 100 );
@@ -679,7 +695,7 @@ str = JSON.stringify( arr.toJSON() );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -696,7 +712,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -741,17 +757,17 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [json]: http://www.json.org/
 
-[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes/tree/deno
+[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes
 
-[@stdlib/array/complex64]: https://github.com/stdlib-js/array-complex64/tree/deno
+[@stdlib/array/complex64]: https://github.com/stdlib-js/array-complex64
 
-[@stdlib/array/complex128]: https://github.com/stdlib-js/array-complex128/tree/deno
+[@stdlib/array/complex128]: https://github.com/stdlib-js/array-complex128
 
 <!-- <related-links> -->
 
-[@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray-array/tree/deno
+[@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray-array
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/deno
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
 
 <!-- </related-links> -->
 
