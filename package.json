@@ -60,6 +60,7 @@
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.2"
   },
   "devDependencies": {
+    "@stdlib/array-bool": "^0.1.0",
     "@stdlib/array-complex128": "^0.3.0",
     "@stdlib/array-complex64": "^0.3.0",
     "@stdlib/array-float32": "^0.2.2",
