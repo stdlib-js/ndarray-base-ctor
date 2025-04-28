@@ -37,6 +37,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
+    "@stdlib/array-base-slice": "^0.2.2",
     "@stdlib/array-buffer": "^0.2.2",
     "@stdlib/array-dataview": "^0.2.2",
     "@stdlib/array-uint8": "^0.2.2",
