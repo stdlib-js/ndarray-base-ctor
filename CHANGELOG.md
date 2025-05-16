@@ -4,7 +4,17 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-08)
+## Unreleased (2025-05-16)
+
+<section class="features">
+
+### Features
+
+-   [`b2cefbe`](https://github.com/stdlib-js/stdlib/commit/b2cefbe2b2192cb705b85c43ffac2f57ca782c42) - add custom `valueOf` method
+
+</section>
+
+<!-- /.features -->
 
 <section class="bug-fixes">
 
@@ -23,6 +33,7 @@
 
 <details>
 
+-   [`b2cefbe`](https://github.com/stdlib-js/stdlib/commit/b2cefbe2b2192cb705b85c43ffac2f57ca782c42) - **feat:** add custom `valueOf` method _(by Athan Reines)_
 -   [`7321e29`](https://github.com/stdlib-js/stdlib/commit/7321e294d995d496b35f24f253055190ae6a78d5) - **refactor:** use base assertion utility _(by Athan Reines)_
 -   [`25abfc6`](https://github.com/stdlib-js/stdlib/commit/25abfc67b400f646304fa1f10b239a051f6569f6) - **refactor:** support non-built-in shape and strides objects _(by Athan Reines)_
 -   [`5e2bbef`](https://github.com/stdlib-js/stdlib/commit/5e2bbef14efd5937e23047c01af0e740e6cbd4f6) - **fix:** add missing boolean array support _(by Athan Reines)_
