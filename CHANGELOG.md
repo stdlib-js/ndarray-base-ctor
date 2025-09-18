@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-01)
+## Unreleased (2025-09-18)
 
 <section class="features">
 
@@ -33,6 +33,7 @@
 
 <details>
 
+-   [`a3e7978`](https://github.com/stdlib-js/stdlib/commit/a3e79786217bf1c9a84875203251af82cc93a222) - **docs:** update markup _(by Athan Reines)_
 -   [`7add020`](https://github.com/stdlib-js/stdlib/commit/7add0201c13e56a0381926ccfd4073c84eaf2ed4) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
 -   [`b2cefbe`](https://github.com/stdlib-js/stdlib/commit/b2cefbe2b2192cb705b85c43ffac2f57ca782c42) - **feat:** add custom `valueOf` method _(by Athan Reines)_
 -   [`7321e29`](https://github.com/stdlib-js/stdlib/commit/7321e294d995d496b35f24f253055190ae6a78d5) - **refactor:** use base assertion utility _(by Athan Reines)_
