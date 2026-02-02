@@ -37,7 +37,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/array-base-slice": "^0.2.2",
+    "@stdlib/array-base-slice": "^0.3.0",
     "@stdlib/array-buffer": "^0.2.2",
     "@stdlib/array-dataview": "^0.2.2",
     "@stdlib/array-uint8": "^0.2.2",
@@ -58,8 +58,8 @@
     "@stdlib/number-float64-base-to-int64-bytes": "^0.2.2",
     "@stdlib/string-replace": "^0.2.2",
     "@stdlib/types": "^0.4.3",
-    "@stdlib/utils-define-nonenumerable-read-only-accessor": "^0.2.3",
-    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.2"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor": "^0.2.4",
+    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.3"
   },
   "devDependencies": {
     "@stdlib/array-bool": "^0.1.1",
@@ -76,7 +76,7 @@
     "@stdlib/assert-is-plain-object": "^0.2.2",
     "@stdlib/assert-is-positive-integer": "^0.2.2",
     "@stdlib/complex-float32-ctor": "^0.1.0",
-    "@stdlib/complex-float64-ctor": "^0.1.0",
+    "@stdlib/complex-float64-ctor": "^0.1.1",
     "@stdlib/math-base-special-floor": "^0.2.3",
     "@stdlib/random-base-randu": "^0.2.2",
     "proxyquire": "^2.0.0",
