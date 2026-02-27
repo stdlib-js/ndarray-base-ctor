@@ -45,38 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray-base-ctor
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-ndarray = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-ctor@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var ndarray = require( 'path/to/vendor/umd/ndarray-base-ctor/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-ctor@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.ndarray;
-})();
-</script>
+var ndarray = require( '@stdlib/ndarray-base-ctor' );
 ```
 
 <a name="main"></a>
@@ -549,11 +543,44 @@ var d = arr.data;
 
 For zero-dimensional arrays, the first, and **only**, argument should be the value `v` to set. The method returns the `ndarray` instance.
 
+<a name="method-to-locale-string"></a>
+
+#### ndarray.prototype.toLocaleString( \[locales\[, options]] )
+
+Serializes an `ndarray` as a locale-specific string.
+
+```javascript
+// Specify the array configuration:
+var buffer = [ 1234.567, 9876.543, 1111.222, 3333.444 ];
+var shape = [ 2, 2 ];
+var order = 'row-major';
+var strides = [ 2, 1 ];
+var offset = 0;
+
+// Create a new ndarray:
+var arr = ndarray( 'generic', buffer, shape, strides, offset, order );
+
+// Serialize to a locale-specific string:
+var str = arr.toLocaleString( 'en-US' );
+// returns "ndarray( 'generic', [ 1,234.567, 9,876.543, 1,111.222, 3,333.444 ], [ 2, 2 ], [ 2, 1 ], 0, 'row-major' )"
+
+// Use German locale:
+str = arr.toLocaleString( 'de-DE' );
+// returns "ndarray( 'generic', [ 1.234,567, 9.876,543, 1.111,222, 3.333,444 ], [ 2, 2 ], [ 2, 1 ], 0, 'row-major' )"
+```
+
+The method accepts the following arguments:
+
+-   **locales**: a string with a BCP 47 language tag or an array of such strings.
+-   **options**: configuration properties.
+
+The method does **not** serialize data outside of the buffer region defined by the array configuration.
+
 <a name="method-to-string"></a>
 
 #### ndarray.prototype.toString()
 
-Serializes an `ndarray` as a `string`.
+Serializes an `ndarray` as a string.
 
 ```javascript
 // Specify the array configuration:
@@ -625,14 +652,9 @@ The method does **not** serialize data outside of the buffer region defined by t
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-ctor@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var Float32Array = require( '@stdlib/array-float32' );
+var ndarray = require( '@stdlib/ndarray-base-ctor' );
 
 // Create a data buffer:
 var buffer = new Float32Array( (3*3*3*3) + 100 );
@@ -670,11 +692,6 @@ var str = arr.toString();
 // Serialize the array as JSON:
 str = JSON.stringify( arr.toJSON() );
 // e.g., returns '{"type":"ndarray","dtype":"float32","flags":{"READONLY":false},"order":"row-major","shape":[3,3,3,3],"strides":[27,9,3,1],"data":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}'
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -778,17 +795,17 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [json]: http://www.json.org/
 
-[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes/tree/umd
+[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes
 
-[@stdlib/array/complex64]: https://github.com/stdlib-js/array-complex64/tree/umd
+[@stdlib/array/complex64]: https://github.com/stdlib-js/array-complex64
 
-[@stdlib/array/complex128]: https://github.com/stdlib-js/array-complex128/tree/umd
+[@stdlib/array/complex128]: https://github.com/stdlib-js/array-complex128
 
 <!-- <related-links> -->
 
-[@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray-array/tree/umd
+[@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray-array
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/umd
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
 
 <!-- </related-links> -->
 
