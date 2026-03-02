@@ -47,6 +47,7 @@
     "@stdlib/assert-is-plain-object": "^0.2.3",
     "@stdlib/assert-is-string": "^0.2.3",
     "@stdlib/assert-is-string-array": "^0.2.3",
+    "@stdlib/assert-is-undefined-or-null": "^0.2.3",
     "@stdlib/bigint-ctor": "^0.2.3",
     "@stdlib/boolean-ctor": "^0.2.3",
     "@stdlib/complex-float64-imag": "^0.1.2",
