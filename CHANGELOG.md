@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-03-02)
+## Unreleased (2026-03-21)
 
 <section class="features">
 
@@ -20,6 +20,7 @@
 
 ### Bug Fixes
 
+-   [`ebd5886`](https://github.com/stdlib-js/stdlib/commit/ebd5886f97aef9dad8daf7df0d850882a767ca6b) - preserve formatting of original string serialization and rename internal files
 -   [`eab49ad`](https://github.com/stdlib-js/stdlib/commit/eab49ad435f6080ec28a8fbb75de4d9520bdd7e4) - ensure support for elements which are null or undefined
 
 </section>
@@ -32,6 +33,7 @@
 
 <details>
 
+-   [`ebd5886`](https://github.com/stdlib-js/stdlib/commit/ebd5886f97aef9dad8daf7df0d850882a767ca6b) - **fix:** preserve formatting of original string serialization and rename internal files _(by Athan Reines)_
 -   [`eab49ad`](https://github.com/stdlib-js/stdlib/commit/eab49ad435f6080ec28a8fbb75de4d9520bdd7e4) - **fix:** ensure support for elements which are null or undefined _(by Athan Reines)_
 -   [`793a38c`](https://github.com/stdlib-js/stdlib/commit/793a38c29f31677807e0cf6748f1ca54fbbef4ec) - **feat:** add `toLocaleString` method to `ndarray/base/ctor` [(#9435)](https://github.com/stdlib-js/stdlib/pull/9435) _(by Muhammad Haris, Athan Reines)_
 
