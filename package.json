@@ -70,6 +70,7 @@
     "@stdlib/error-tools-fmtprodmsg": "^0.2.3"
   },
   "devDependencies": {
+    "@stdlib/array-base-to-accessor-array": "^0.2.3",
     "@stdlib/array-bool": "^0.1.2",
     "@stdlib/array-complex128": "^0.3.2",
     "@stdlib/array-complex64": "^0.3.2",
