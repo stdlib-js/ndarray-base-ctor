@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-10-03)
+## Unreleased (2026-10-11)
 
 <section class="features">
 
@@ -20,6 +20,7 @@
 
 ### Bug Fixes
 
+-   [`489e3ab`](https://github.com/stdlib-js/stdlib/commit/489e3ab218cb5c6da7ade17cddd942303ab5585f) - account for \"empty\" 0d ndarrays
 -   [`0b89951`](https://github.com/stdlib-js/stdlib/commit/0b89951e22829e302f05d948ac8391d6300a39ea) - serialize the data type to a string and add comment
 -   [`ebd5886`](https://github.com/stdlib-js/stdlib/commit/ebd5886f97aef9dad8daf7df0d850882a767ca6b) - preserve formatting of original string serialization and rename internal files
 -   [`eab49ad`](https://github.com/stdlib-js/stdlib/commit/eab49ad435f6080ec28a8fbb75de4d9520bdd7e4) - ensure support for elements which are null or undefined
@@ -34,6 +35,7 @@
 
 <details>
 
+-   [`489e3ab`](https://github.com/stdlib-js/stdlib/commit/489e3ab218cb5c6da7ade17cddd942303ab5585f) - **fix:** account for \"empty\" 0d ndarrays _(by Athan Reines)_
 -   [`c53a29f`](https://github.com/stdlib-js/stdlib/commit/c53a29fc1e8048c4a4454d7a806d7ea1d2e6f326) - **test:** add test case for accessor array buffers _(by Athan Reines)_
 -   [`0b89951`](https://github.com/stdlib-js/stdlib/commit/0b89951e22829e302f05d948ac8391d6300a39ea) - **fix:** serialize the data type to a string and add comment _(by Athan Reines)_
 -   [`18f1915`](https://github.com/stdlib-js/stdlib/commit/18f191560f9322727ee126619e9e083187b64821) - **chore:** minor clean-up _(by Philipp Burckhardt)_
